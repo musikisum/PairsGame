@@ -1,0 +1,51 @@
+.gameOptions {
+  width: 100%; 
+  height: 20px; 
+  text-align: center; 
+  padding: 20px 0; 
+  margin: 0;
+}
+
+.gameOptions input,
+.gameOptions select {
+  width: 100px;
+  height: 30px;
+  margin-right: 2px;
+}
+#textfields input {
+  width: 100px;
+  height: 25px;
+  padding: 0 2px;
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  .gameOptions input {
+    width: auto;
+    height: 30px;
+    margin-top: 2px;
+  }
+  .gameOptions select {
+    width: 80px;
+    height: 30px;
+    margin-top: 2px;
+  }
+  #textfields input {
+    width: 80px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gameOptions {
+    margin-bottom: 20px;
+  }
+  .gameOptions input,
+  .gameOptions select {
+    height: 25px;
+  }
+  #textfields input {
+    width: auto;
+    height: 20px;
+  }
+}

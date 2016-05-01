@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das berühmte Erinnerungs-Kartenspiel</title>
+    <link rel="stylesheet" type="text/css" href="pairsgame.css">
+    <link rel="stylesheet" type="text/css" href="musikanalyse.net-games.css">
+  </head>
+  <body>
+    <div class="gameOptions">
+      <select onchange="createTextInputs(this)">
+        <option value="1" selected>alleine</option>
+        <option value="2">zu zweit</option>
+        <option value="3">zu dritt</option>
+        <option value="4">zu viert</option>
+      </select>
+      <span id="textfields"><input type="text" placeholder="1. <Name>"></input></span>
+      <select onchange="setTimespan(this)">
+        <option value="4.5">leicht</option>
+        <option value="3" selected>mittel</option>
+        <option value="1.5">schwer</option>
+      </select>
+      <select onchange="setLanguage(this)">
+        <option value="en" selected>Englisch</option>
+        <option value="de">Deutsch</option>
+      </select>
+      <input type="button" onclick="onBeginClick()" value="Anfangen"></input>
+      <input type="button" onclick="onResetClick()" value="Nochmal?"></input>
+    </div>
+    <div class="container">
+  	  <ul id="memory">
+         <li>
+           <img src="Beethoven-Memory-Seite001.png">
+         </li>
+         <li>
+           <img src="Beethoven-Memory-Seite002.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite003.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite004.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite005.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite006.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite007.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite008.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite009.png">
+         </li>
+         <li>
+           <img src="Beethoven-Memory-Seite010.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite011.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite012.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite013.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite014.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite015.png">
+         </li> 
+         <li>
+           <img src="Beethoven-Memory-Seite016.png">
+         </li> 
+      </ul>
+    </div>
+  </body>
+</html>
+
+<script src="index.js"></script>
+<script src="pairsgame.js"></script>
